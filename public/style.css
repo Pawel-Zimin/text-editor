@@ -1,0 +1,80 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+
+body{
+   margin: 1.6rem;
+   background-color: #eee;
+}
+
+.titleInputLabel{
+   display: flex;
+   font-size: 2rem;
+   line-height: 2.5rem;
+}
+
+.titleInput{
+   margin-left: 0.8rem;
+   height: 2.5rem;
+   width: 400px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.35rem;
+}
+
+.btn-group{
+   margin: 0.5rem 0;
+}
+
+.btn{
+   padding: 6px;
+   background-color: lightsteelblue;
+   border: 2px solid transparent;
+   font-size: 0.8rem;
+   transition: 0.3s;
+}
+.btn-active,
+.btn:hover{
+   cursor: pointer;
+   background-color: #97ABC5;
+   border-color: #31455F;
+}
+
+div.textarea{
+   min-height: 200px;
+   width: 50vw;
+   background-color: #ddd;
+   padding: 0.75rem 1.5rem;
+   border: 2px solid black;
+}
+
+.hidden{
+   display: none;
+}
+
+.titleListContainer p{
+   text-decoration: underline;
+   font-size: 1.2rem;
+   padding: 6px 0;
+}
+
+.titleList{
+   list-style: decimal;
+}
+
+.liEl{
+   margin-left: 22px;
+   padding: 3px 0;
+}
+
+.aLink:hover{
+   color: mediumblue;
+   font-weight: bold;
+   cursor: pointer;
+}

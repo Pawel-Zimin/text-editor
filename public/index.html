@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Simple text editor</title>
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/a66fb3b73a.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <form class='form' action="submit">
+      <label class='titleInputLabel' for="titleInput">Title:
+         <input class='titleInput' id='titleInput' type="text" required>
+      </label>
+
+      <div class="btn-group">
+         <button for='textarea' type="button" class='btn cmdBtn bold' data-command='bold'>
+            <i class="fas fa-bold"></i>
+         </button>
+         <button for='textarea' type="button" class='btn cmdBtn italic' data-command='italic'>
+            <i class="fas fa-italic"></i>
+         </button>
+         <button for='textarea' type="button" class='btn cmdBtn list' data-command='insertUnorderedList'>
+            <i class="fas fa-list-ul"></i>
+         </button>
+      </div>
+      
+      <div 
+         class='textarea'
+         id='textarea'
+         cols="60" 
+         rows="12" 
+         contenteditable="true"
+         required>
+      </div>
+
+      <div class="btn-group">
+         <button type='submit' class='btn saveBtn'>SAVE</button>
+         <button type='button' class='btn loadBtn'>LOAD</button>
+         <button type='button' class="btn clearBtn">CLEAR</button>
+      </div>
+   </form>
+   
+
+   <div class="titleListContainer hidden">
+      <p>Choose file to load:</p>
+      <ul class='titleList'>
+
+      </ul>
+   </div>
+
+   <script src='./index.js'></script>
+</body>
+</html>
